@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FDB7EA; /* Warna latar belakang kalem */
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px; /* Tambahkan padding untuk ruang di sekitar konten */
+}
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(145deg, #f48fb1, #f06292);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(244, 143, 177, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  button:hover {
+    background: linear-gradient(145deg, #f06292, #ec407a);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(240, 98, 146, 0.5);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(240, 98, 146, 0.3);
+  }
+.next {
+  padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(145deg, #f48fb1, #f06292);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(244, 143, 177, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-decoration: none;
+}
+.next:hover {
+    background: linear-gradient(145deg, #f06292, #ec407a);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(240, 98, 146, 0.5);
+  }
+  .next:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(240, 98, 146, 0.3);
+  }
+
+
+
+
+
+.envelope {
+    font-size: 15vw; /* Ukuran responsif untuk amplop */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.envelope:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    display: none;
+    font-size: 5vw; /* Ukuran responsif untuk pesan */
+    margin-top: 20px;
+    animation: typing 4s steps(30, end);
+}
+
+.pesan {
+    display: none;
+    font-size: 5vw; /* Ukuran responsif untuk pesan */
+    margin-top: 20px;
+    animation: typing 4s steps(30, end);
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.bunga {
+    position: absolute;
+    top: -10%; /* Sesuaikan posisi bunga */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fall 5s infinite;
+}
+
+@keyframes fall {
+    0% { top: -10%; }
+    100% { top: 100vh; }
+}
+
+/* Media Query untuk iPhone 11 */
+@media only screen and (max-width: 375px) {
+    .envelope {
+        font-size: 20vw; /* Ukuran lebih besar untuk layar kecil */
+    }
+
+    .message {
+        font-size: 6vw; /* Ukuran lebih besar untuk pesan */
+    }
+    .pesan {
+        font-size: 6vw; /* Ukuran lebih besar untuk pesan */
+    }
+}
+.bubble {
+      position: absolute;
+      font-size: 20px;
+      opacity: 0;
+      animation: floatUp 5s ease-out forwards;
+    }
+
+    
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+    }
+    h3 span{
+      color: red;
+      text-decoration: solid;
+    }
